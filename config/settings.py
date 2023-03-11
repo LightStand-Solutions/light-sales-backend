@@ -20,6 +20,10 @@ DJANGO_APPS = [
 
 LOCAL_APPS = [
     'apps.core',
+    'apps.user',
+    'apps.client',
+    'apps.product',
+    'apps.reports',
 ]
 
 THIRD_APPS = [
@@ -69,6 +73,8 @@ DATABASES = {
         'PORT': config('DATABASE_PORT'),
     }
 }
+
+AUTH_USER_MODEL = 'user.User'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
