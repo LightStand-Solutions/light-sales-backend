@@ -9,4 +9,3 @@ from django.contrib.contenttypes.fields import GenericRelation
 class User(AbstractUser):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     client = models.ForeignKey(Client, on_delete=models.CASCADE, related_name='users', null=True)
-    contacts = GenericRelation(Contact, null=True)
