@@ -2,3 +2,6 @@
 ./venv
 .idea
 db.sqlite3qq
+
+__pycache__/
+*.pyc
